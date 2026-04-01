@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div centrale adattivo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html, body 
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    body
+    {
+        overflow-y: scroll;
+    }
+
+    /* Contenitore principale */
+    .container {
+        display: flex;           /* Flexbox per affiancare i div */
+        align-items: stretch;    /* tutti i div avranno stessa altezza */
+        min-height: 100vh;       /* altezza minima: tutta la finestra */
+    }
+
+    /* Div laterali */
+    .side {
+        width: 26.5%;
+        background-color: black;
+    }
+
+    /* Div centrale */
+    .center {
+        flex: 1;                 /* occupa lo spazio restante */
+        background-color: white;
+    }
+
+    .contcentro {
+        display: flex;           /* Flexbox per affiancare i div */
+        align-items: stretch;       /* altezza minima: tutta la finestra */
+    }
+
+    .titolo 
+    {
+        width: 37.5%;
+        background-color: #AF9B94;
+    }
+
+    .titolo1
+    {
+        width: 58%;
+        height: 100%;
+        margin: 0% auto;
+    }
+
+    .contenuto 
+    {
+        flex: 1;
+        background-color: white;
+    }
+
+    .contenuto1 
+    {
+        width: 86%;
+        min-height: calc(100vh - 143px);
+        margin: 0% auto;
+        padding-bottom: 143px;
+    }
+
+    .spazio
+    {
+        width: 100%;
+        height: 4vh;
+        background-color: aqua;
+    }
+
+    .nome {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #3D322E;
+        font-size: 43px;
+        margin-top: 0;
+    }
+
+    .dati
+    {
+        font-family: 'Montserrat', sans-serif;
+        color: #3D322E;
+        font-size: 13px;
+        margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="side"><!-- Laterale sinistro --></div>
+        <div class="center contcentro">
+            <div class="titolo">
+                <div class="titolo1"></div>
+            </div>
+            <div class="contenuto">
+                <div class="contenuto1" id="c">
+                    <div class="spazio"></div>
+                    <span class="nome">Franco Simone</span><br>
+                    <span class="dati">
+                        <a href="tel:+393665667905" target="_blank">
+                            +39 366 566 7905
+                        </a>
+                        <br>
+                        <a href="https://mail.google.com/mail/?view=cm&to=franco.simone.im@gmail.com&su=Richiesta&body=Ciao, vorrei informazioni" target="_blank">
+                            franco.simone.im@gmail.com
+                        </a>
+                    </span>
+                    <div class="spazio"></div>
+                </div>
+            </div>
+        </div>
+        <div class="side"><!-- Laterale destro --></div>
+    </div>
+
+
+
+</body>
+</html>
