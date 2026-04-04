@@ -1,11 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    ciao
-</body>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Div centrale adattivo</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+        <style>
+            html, body 
+            {
+                margin: 0;
+                padding: 0;
+            }
+            .este
+            {
+                width: calc(100% - 6vmax);
+                min-height: calc(35vmax - 6vmax);
+                height: auto;
+                padding: 3vmax;
+            }
+            .inte
+            {
+                width: 100%;
+                min-height: calc(35vmax - 6vmax);
+                height: auto;
+                display: flex;
+                align-items: stretch;
+            }
+            div.imma
+            {
+                width: auto;
+                height: calc(35vmax - 6vmax);
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+            }
+            img.imma
+            {
+                width: auto;
+                height: 60%;
+            }
+            
+        </style>
+        <style type="text/css" id="operaUserStyle"></style>
+    </head>
+    <body>
+        <div class="este" style=" background-color: #AF9B94;">
+            <div class="inte">
+                <div class="imma">
+                    <img class="imma" src="marza.jpg" alt="sium">
+                </div>
+                <div style="background-color: transparent; width: 3vmax;"></div>
+                <div style="flex-grow: 1;"> 
+                    <h1>Franco Simone</h1>
+                    <span>
+                        ciao
+                        ciao
+                        ciao
+                    </span>                   
+                </div>
+            </div>
+        </div>
+        <div class="este" style=" background-color: #fffdfa;">
+            <div class="inte">
+
+            </div>
+        </div>
+        <div class="este" style=" background-color: #AF9B94;">
+            <div class="inte">
+
+            </div>
+        </div>
+        <div class="este" style=" background-color: #fffdfa;">
+            <div class="inte">
+
+            </div>
+        </div>
+    </body>
 </html>
