@@ -3,6 +3,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Div centrale adattivo</title>
+        <script>
+        let resizeTimeout;
+        function checkScreenSize() 
+        {
+            if (document.documentElement.clientWidth >= 600) 
+            {
+                window.location.href = "index.html";
+            }
+        }
+
+        window.addEventListener("load", checkScreenSize);
+
+        window.addEventListener("resize", () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(checkScreenSize, 200); // aspetta 200ms dall’ultimo resize
+        });
+        </script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
         <style>
             html, body 
@@ -30,15 +47,19 @@
                 width: auto;
                 height: calc(35vmax - 6vmax);
                 background-color: transparent;
-                display: flex;
-                align-items: center;
             }
             img.imma
             {
                 width: auto;
-                height: 60%;
+                height: 40%;
             }
-            
+            .nome {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                color: #3D322E;
+                font-size: 3.8vmax;
+                margin-top: 0;
+            }
         </style>
         <style type="text/css" id="operaUserStyle"></style>
     </head>
@@ -50,12 +71,7 @@
                 </div>
                 <div style="background-color: transparent; width: 3vmax;"></div>
                 <div style="flex-grow: 1;"> 
-                    <h1>Franco Simone</h1>
-                    <span>
-                        ciao
-                        ciao
-                        ciao
-                    </span>                   
+                    <span class="nome">Franco Simone</span>                   
                 </div>
             </div>
         </div>
