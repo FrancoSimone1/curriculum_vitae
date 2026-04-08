@@ -27,6 +27,18 @@
                     min-height: 100vh;       /* altezza minima: tutta la finestra */
                 }
 
+                .ps
+                {
+                    background-color: #AF9B94 !important;
+                    color: #fffdfa !important;
+                }
+
+                .pc
+                {
+                    background-color: #fffdfa !important;
+                    color: #3D322E !important;
+                }
+
                 .este
                 {
                     width: calc(100% - 6vmax);
@@ -47,32 +59,74 @@
                 div.imma
                 {
                     width: auto;
-                    height: calc(35vmax - 6vmax);
+                    height: 100%;
                     background-color: transparent;
                 }
 
-                img.imma
+                img.imma 
                 {
                     width: auto;
-                    height: 40%;
+                    height: clamp(102px, 26vmin, 157px);
                 }
 
                 .nome {
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 700;
-                    color: #3D322E;
-                    font-size: clamp(35px, 3vmax, 110px);
+                    font-size: clamp(25px, 7vmin, 42px);
                     margin-top: 0;
                 }
+
                 .dati
                 {
                     font-family: 'Montserrat', sans-serif;
-                    color: #3D322E;
-                    font-size: clamp(15px, 1vmax, 36px);
+                    font-size: clamp(15px, 4vmin, 22px);
                     margin-top: 0;
                     text-decoration: none;
                     display: block; 
                     margin-bottom: 0.3vmax;
+                }
+
+                @media (max-width: 470px)
+                {
+                    .dati
+                    {
+                        font-size: clamp(14px, 3.8vmin, 22px);
+                    }
+                }
+
+                .para 
+                {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    font-size: clamp(17px, 2.5vmax, 25px);
+                    margin-top: 0;
+                    text-transform: uppercase;
+                }
+
+                .testo
+                {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: clamp(13px, 0.9vmax, 33px);;
+                    margin-top: 0;
+                    text-decoration: none;
+                    display: block; 
+                    margin-bottom: clamp(10px, 1.8vmax, 15px);
+                }
+                
+                a 
+                {
+                    color: #fffdfa;
+                }
+
+                ul
+                {
+                    margin: 0px;
+                    padding-left: 2.2vmax;
+                }
+
+                li
+                {
+                    margin-bottom: 10px;
                 }
             }
         </style>
@@ -163,8 +217,8 @@
         </div>
 
         <div class="mobile">
-            <div class="este" style=" background-color: #AF9B94;">
-                <div class="inte">
+            <div class="este ps" style="min-height: auto; background-color: #AF9B94;">
+                <div class="inte" style="min-height: auto;">
                     <div class="imma">
                         <img class="imma" src="foto_33292.jpg" alt="sium">
                     </div>
@@ -190,19 +244,55 @@
                     </div>
                 </div>
             </div>
-            <div class="este" style=" background-color: #fffdfa;">
-                <div class="inte">
-
+            <div class="este pc" style=" background-color: #fffdfa;">
+                <div class="inte" style="display: block;">
+                    <span class="para">istruzione e formazione</span>
+                    <div class="spazio" style="height: 1vmax;"></div>
+                    <span class="testo">Diploma di Istruzione Tecnica / Settore Tecnologico, indirizzo Informatica e Telecomunicazioni (articolazione Informatica)</span>
+                        <span class="testo"><strong>Istituto Tecnico Industriale Ferraris-Pancaldo, Savona</strong></span>
+                        <span class="testo">2023</span>
+                    
+                    <div class="spazio"></div>
+                    <span class="para">ESPERIENZE PROFESSIONALI</span>
+                    <div class="spazio" style="height: 1vmax;"></div>
+                    <span class="testo"><strong>Operatore balneare e gestore del servizio spiaggia</strong></span>
+                    <span class="testo">01/05/2025 | 10/10/2025</span>
+                    <span class="testo">Lido “La Spiaggia”, Spotorno SV</span>
+                    <div class="spazio" style="height: 1vmax;"></div>
+                    <span class="testo">
+                        <ul>
+                            <li>Assicurato l’ordine, la pulizia e la manutenzione quotidiana dello stabilimento balneare, garantendo un ambiente sicuro, accogliente e sempre pronto all’uso per la clientela</li>
+                            <li>Coordinato e supervisionato il personale, ottimizzando le attività quotidiane e migliorando l’efficienza operativa dello stabilimento</li>
+                            <li>Gestito le richieste e le problematiche dei clienti con prontezza e professionalità, incrementando la soddisfazione e fidelizzazione della clientela</li>
+                            <li>Organizzato e amministrato il noleggio dell’attrezzatura balneare (ombrelloni, lettini, sdraio), ottimizzando disponibilità, rotazione e manutenzione</li>
+                            <li>Controllato e registrato tutte le operazioni di cassa, assicurando precisione, trasparenza e correttezza contabile nelle transazioni</li>
+                        </ul>
+                    </span>
                 </div>
             </div>
-            <div class="este" style=" background-color: #AF9B94;">
-                <div class="inte">
-
-                </div>
-            </div>
-            <div class="este" style=" background-color: #fffdfa;">
-                <div class="inte">
-
+            <div class="este ps" style=" background-color: #AF9B94;">
+                <div class="inte" style="display: block;">
+                    <span class="para">capacità e competenze</span>
+                    <div class="spazio " style="height: 0.8vmax;"></div>
+                    <span class="testo">
+                        <ul>
+                            <li>competenze in sistemi informatici, applicazioni web, reti e apparati di comunicazione</li>
+                            <li>analizzare, progettare, installare e gestire sistemi informatici, basi dati, reti e apparati multimediali</li>
+                            <li>gestorire il ciclo di vita delle applicazioni software, inclusi gestionali, servizi e sistemi dedicati</li>
+                            <li>collabora a progetti rispettando normative nazionali e internazionali sulla sicurezza e privacy</li>
+                            <li>Ottima capacità di lavoro in gruppo e di adattamento e spiccate attitudini relazionali e comunicative</li>
+                        </ul>
+                    </span>
+                    <div class="spazio " style="height: 0.8vmax;"></div>
+                    <span class="para">Competenze Linguistiche</span>
+                    <div class="spazio " style="height: 0.8vmax;"></div>
+                    <span class="testo">
+                        <ul>
+                            <li>Inglese - B2</li>
+                        </ul>
+                    </span>
+                    <div class="spazio" style="height: 6vmax;"></div>
+                    <span class="testo">Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi del Regolamento UE 2016/679 (GDPR) e della normativa vigente.</span>
                 </div>
             </div>
         </div>
