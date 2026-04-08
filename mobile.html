@@ -53,12 +53,22 @@
                 width: auto;
                 height: 40%;
             }
-            .nome {
+           .nome {
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 700;
                 color: #3D322E;
-                font-size: 3.8vmax;
+                font-size: clamp(35px, 3vmax, 110px);
                 margin-top: 0;
+            }
+            .dati
+            {
+                font-family: 'Montserrat', sans-serif;
+                color: #3D322E;
+                font-size: clamp(13px, 1vmax, 36px);
+                margin-top: 0;
+                text-decoration: none;
+                display: block; 
+                margin-bottom: 0.3vmax;
             }
         </style>
         <style type="text/css" id="operaUserStyle"></style>
@@ -67,11 +77,27 @@
         <div class="este" style=" background-color: #AF9B94;">
             <div class="inte">
                 <div class="imma">
-                    <img class="imma" src="marza.jpg" alt="sium">
+                    <img class="imma" src="foto_33292.jpg" alt="sium">
                 </div>
                 <div style="background-color: transparent; width: 3vmax;"></div>
                 <div style="flex-grow: 1;"> 
-                    <span class="nome">Franco Simone</span>                   
+                    <span class="nome">Franco Simone</span>
+                    <div style="background-color: transparent; height: 3vmax; width: 100%;"></div>
+                    <span class="dati">
+                        09/11/2004 - Borgosesia (VC)
+
+                        <a class="dati" href="tel:+393665667905" target="_blank">
+                            +39 366 566 7905
+                        </a>
+                            
+                        <a class="dati" href="https://mail.google.com/mail/?view=cm&amp;to=franco.simone.im@gmail.com&amp;su=Richiesta&amp;body=Ciao, vorrei informazioni" target="_blank">
+                            franco.simone.im@gmail.com
+                        </a>
+                            
+                        <a class="dati" href="https://www.google.com/maps/search/?api=1&amp;query=Spotorno" target="_blank">
+                            17028, Spotorno SV
+                        </a>
+                    </span>        
                 </div>
             </div>
         </div>
