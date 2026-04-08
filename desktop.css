@@ -1,145 +1,145 @@
            
 
-            @media (min-width: 600px) 
-            {
+@media (min-width: 600px) 
+{
+    .mobile
+    {
+        display: none;
+    }
 
-            .mobile
-            {
-                display: none;
-            }
-            /* Contenitore principale */
-            .container 
-            {
-                display: flex;           /* Flexbox per affiancare i div */
-                align-items: stretch;    /* tutti i div avranno stessa altezza */
-                min-height: 100vh;       /* altezza minima: tutta la finestra */
-            }
+    .container 
+    {
+        display: flex;
+        align-items: stretch;
+        min-height: 100vh;
+    }
 
-            /* Div laterali */
-            .side 
-            {
-                width: 20%;
-                background-color: black;
-            }
+    .side 
+    {
+        width: 20%;
+        background-color: black;
+    }
 
-            /* Div centrale */
-            .center 
-            {
-                flex: 1;                 /* occupa lo spazio restante */
-                background-color: white;
-                display: flex;           /* Flexbox per affiancare i div */
-                align-items: stretch;
-                min-width: 600px;
-            }
+    .center 
+    {
+        flex: 1;
+        background-color: white;
+        display: flex;
+        align-items: stretch;
+        min-width: 600px;
+    }
 
-            .titolo 
-            {
-                width: 37.5%;
-                background-color: #AF9B94;
-            }
+    .titolo 
+    {
+        width: 37.5%;
+        background-color: #AF9B94;
+    }
 
-            .titolo1
-            {
-                width: 58%;
-                height: calc(100% - 2vmax);
-                margin: 0% auto;
-                padding-bottom: 2vmax;
-            }
+    .titolo1
+    {
+        width: 58%;
+        height: calc(100% - 2vmax);
+        margin: 0% auto;
+        padding-bottom: 2vmax;
+    }
 
-            .imma 
-            {
-                display: flex;
-                justify-content: center;
-            }
+    .imma 
+    {
+        display: flex;
+        justify-content: center;
+    }
 
-            .imma img 
-            {
-                width: 100%;   /* riempie tutta la larghezza disponibile */
-                height: auto;  /* mantiene il rapporto originale */
-                display: block;
-            }
+    .imma img 
+    {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
-            .titolo1 > * {
-                color: #fffdfa !important; /* bianco panna */
-            }
-            @media (max-width: 1150px)
-            {
-                .titolo1 > .para {
-                font-size: clamp(17px, 1.5vmax, 66px) !important;
-                }
-            }
-            
+    .titolo1 > * 
+    {
+        color: #fffdfa !important;
+    }
 
-            .contenuto 
-            {
-                flex: 1;
-                background-color: white;
-                padding-bottom: 2vmax;
-            }
+    @media (max-width: 1150px)
+    {
+        .titolo1 > .para 
+        {
+            font-size: clamp(17px, 1.5vmax, 66px) !important;
+        }
+    }
+    
+    .contenuto 
+    {
+        flex: 1;
+        background-color: white;
+        padding-bottom: 2vmax;
+    }
 
-            .contenuto1 
-            {
-                width: 86%;
-                min-height: calc(100vh - 2vmax);
-                margin: 0% auto;
-                padding-bottom: 2vmax;
-            }
+    .contenuto1 
+    {
+        width: 86%;
+        min-height: calc(100vh - 2vmax);
+        margin: 0% auto;
+        padding-bottom: 2vmax;
+    }
 
-            .spazio
-            {
-                width: 100%;
-                height: 2.5vmax;
-                background-color: transparent;
-            }
+    .spazio
+    {
+        width: 100%;
+        height: 2.5vmax;
+        background-color: transparent;
+    }
 
-            .nome {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 700;
-                color: #3D322E;
-                font-size: clamp(35px, 3vmax, 110px);
-                margin-top: 0;
-            }
+    .nome 
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #3D322E;
+        font-size: clamp(35px, 3vmax, 110px);
+        margin-top: 0;
+    }
 
-            .dati
-            {
-                font-family: 'Montserrat', sans-serif;
-                color: #3D322E;
-                font-size: clamp(13px, 1vmax, 36px);
-                margin-top: 0;
-                text-decoration: none;
-                display: block; 
-                margin-bottom: 0.3vmax;
-            }
+    .dati
+    {
+        font-family: 'Montserrat', sans-serif;
+        color: #3D322E;
+        font-size: clamp(13px, 1vmax, 36px);
+        margin-top: 0;
+        text-decoration: none;
+        display: block; 
+        margin-bottom: 0.3vmax;
+    }
 
-            .para 
-            {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 700;
-                color: #3D322E;
-                font-size: clamp(17px, 1.8vmax, 66px);
-                margin-top: 0;
-                text-transform: uppercase;
-            }
+    .para 
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #3D322E;
+        font-size: clamp(17px, 1.8vmax, 66px);
+        margin-top: 0;
+        text-transform: uppercase;
+    }
 
-            .testo
-            {
-                font-family: 'Montserrat', sans-serif;
-                color: #3D322E;
-                font-size: clamp(12px, 0.9vmax, 33px);;
-                margin-top: 0;
-                text-decoration: none;
-                display: block; 
-                margin-bottom: 0.7vmax;
-            }
+    .testo
+    {
+        font-family: 'Montserrat', sans-serif;
+        color: #3D322E;
+        font-size: clamp(12px, 0.9vmax, 33px);;
+        margin-top: 0;
+        text-decoration: none;
+        display: block; 
+        margin-bottom: 0.7vmax;
+    }
 
-            ul
-            {
-                margin: 0px;
-                padding-left: 1.5vmax;
-            }
+    ul
+    {
+        margin: 0px;
+        padding-left: 1.5vmax;
+    }
 
-            li
-            {
-                margin-bottom: 10px;
-            }
-            }
+    li
+    {
+        margin-bottom: 10px;
+    }
+}
