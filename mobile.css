@@ -1,0 +1,115 @@
+@media (max-width: 599px) 
+{
+    .container 
+    {
+        display: none;       /* altezza minima: tutta la finestra */
+    }
+
+    .mobile 
+    {
+        min-height: 100vh;       /* altezza minima: tutta la finestra */
+    }
+
+    .ps
+    {
+        background-color: #AF9B94 !important;
+        color: #fffdfa !important;
+    }
+
+    .pc
+    {
+        background-color: #fffdfa !important;
+        color: #3D322E !important;
+    }
+
+    .este
+    {
+        width: calc(100% - 6vmax);
+        min-height: calc(35vmax - 6vmax);
+        height: auto;
+        padding: 3vmax;
+    }
+
+    .inte
+    {
+        width: 100%;
+        min-height: calc(35vmax - 6vmax);
+        height: auto;
+        display: flex;
+        align-items: stretch;
+    }
+
+    div.imma
+    {
+        width: auto;
+        height: 100%;
+        align-self: center;
+        background-color: transparent;
+    }
+
+    img.imma 
+    {
+        width: auto;
+        height: clamp(102px, 26vmin, 157px);
+    }
+
+    .nome {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: clamp(25px, 7vmin, 42px);
+        margin-top: 0;
+    }
+
+    .dati
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: clamp(15px, 4vmin, 22px);
+        margin-top: 0;
+        text-decoration: none;
+        display: block; 
+        margin-bottom: 0.3vmax;
+    }
+
+    @media (max-width: 470px)
+    {
+        .dati
+        {
+            font-size: clamp(14px, 3.8vmin, 22px);
+        }
+    }
+
+    .para 
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: clamp(17px, 2.5vmax, 25px);
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+
+    .testo
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: clamp(13px, 0.9vmax, 33px);;
+        margin-top: 0;
+        text-decoration: none;
+        display: block; 
+        margin-bottom: clamp(10px, 1.8vmax, 15px);
+    }
+    
+    a 
+    {
+        color: #fffdfa;
+    }
+
+    ul
+    {
+        margin: 0px;
+        padding-left: 2.2vmax;
+    }
+
+    li
+    {
+        margin-bottom: 10px;
+    }
+}

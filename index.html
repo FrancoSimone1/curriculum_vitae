@@ -2,7 +2,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Div centrale adattivo</title>
+        <title>Curriculum Vitae</title>
+        <link rel="icon" type="image/png" href="logop2.png">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
         <style>
             html, body 
@@ -11,132 +12,15 @@
                 padding: 0;
                 background-color: black;
                 min-width: 374px;
-                overflow-x: hidden;
-            }
-
-            @media (max-width: 599px) 
-            {
-            /* Contenitore principale */
-                .container 
-                {
-                    display: none;       /* altezza minima: tutta la finestra */
-                }
-
-                .mobile 
-                {
-                    min-height: 100vh;       /* altezza minima: tutta la finestra */
-                }
-
-                .ps
-                {
-                    background-color: #AF9B94 !important;
-                    color: #fffdfa !important;
-                }
-
-                .pc
-                {
-                    background-color: #fffdfa !important;
-                    color: #3D322E !important;
-                }
-
-                .este
-                {
-                    width: calc(100% - 6vmax);
-                    min-height: calc(35vmax - 6vmax);
-                    height: auto;
-                    padding: 3vmax;
-                }
-
-                .inte
-                {
-                    width: 100%;
-                    min-height: calc(35vmax - 6vmax);
-                    height: auto;
-                    display: flex;
-                    align-items: stretch;
-                }
-
-                div.imma
-                {
-                    width: auto;
-                    height: 100%;
-                    align-self: center;
-                    background-color: transparent;
-                }
-
-                img.imma 
-                {
-                    width: auto;
-                    height: clamp(102px, 26vmin, 157px);
-                }
-
-                .nome {
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 700;
-                    font-size: clamp(25px, 7vmin, 42px);
-                    margin-top: 0;
-                }
-
-                .dati
-                {
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: clamp(15px, 4vmin, 22px);
-                    margin-top: 0;
-                    text-decoration: none;
-                    display: block; 
-                    margin-bottom: 0.3vmax;
-                }
-
-                @media (max-width: 470px)
-                {
-                    .dati
-                    {
-                        font-size: clamp(14px, 3.8vmin, 22px);
-                    }
-                }
-
-                .para 
-                {
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 700;
-                    font-size: clamp(17px, 2.5vmax, 25px);
-                    margin-top: 0;
-                    text-transform: uppercase;
-                }
-
-                .testo
-                {
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: clamp(13px, 0.9vmax, 33px);;
-                    margin-top: 0;
-                    text-decoration: none;
-                    display: block; 
-                    margin-bottom: clamp(10px, 1.8vmax, 15px);
-                }
-                
-                a 
-                {
-                    color: #fffdfa;
-                }
-
-                ul
-                {
-                    margin: 0px;
-                    padding-left: 2.2vmax;
-                }
-
-                li
-                {
-                    margin-bottom: 10px;
-                }
             }
         </style>
         <link rel="stylesheet" href="desktop.css">
+        <link rel="stylesheet" href="mobile.css">
         <style type="text/css" id="operaUserStyle"></style>
     </head>
     <body>
         <div class="container">
-            <div class="side"><!-- Laterale sinistro --></div>
+            <div class="side"></div>
             <div class="center">
                 <div class="titolo">
                     <div class="titolo1">
@@ -170,21 +54,11 @@
                     <div class="contenuto1" id="c">
                         <div class="spazio" style="height: 1.2vmax;"></div>
                         <span class="nome">Franco Simone</span>
-                        
                         <span class="dati">
                             09/11/2004 - Borgosesia (VC)
-
-                            <a class="dati" href="tel:+393665667905" target="_blank">
-                                +39 366 566 7905
-                            </a>
-                            
-                            <a class="dati" href="https://mail.google.com/mail/?view=cm&amp;to=franco.simone.im@gmail.com&amp;su=Richiesta&amp;body=Ciao, vorrei informazioni" target="_blank">
-                                franco.simone.im@gmail.com
-                            </a>
-                            
-                            <a class="dati" href="https://www.google.com/maps/search/?api=1&amp;query=Spotorno" target="_blank">
-                                17028, Spotorno SV
-                            </a>
+                            <a class="dati" href="tel:+393665667905" target="_blank">+39 366 566 7905</a>
+                            <a class="dati" href="https://mail.google.com/mail/?view=cm&amp;to=franco.simone.im@gmail.com&amp;su=Richiesta&amp;body=Ciao, vorrei informazioni" target="_blank">franco.simone.im@gmail.com</a>
+                            <a class="dati" href="https://www.google.com/maps/search/?api=1&amp;query=Spotorno" target="_blank">17028, Spotorno SV</a>
                         </span>
                         <div class="spazio"></div>
                         <span class="para">istruzione e formazione</span>
@@ -214,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <div class="side"><!-- Laterale destro --></div>
+            <div class="side"></div>
         </div>
 
         <div class="mobile">
@@ -224,24 +98,15 @@
                         <img class="imma" src="foto_33292.jpg" alt="sium">
                     </div>
                     <div style="background-color: transparent; width: 3vmax; min-width: 20px;"></div>
-                    <div style="flex-grow: 1;"> 
+                    <div style="flex-grow: 1;">
                         <span class="nome">Franco Simone</span>
                         <div style="background-color: transparent; height: 1vmax; width: 100%;"></div>
                         <span class="dati">
                             09/11/2004 - Borgosesia (VC)
-
-                            <a class="dati" href="tel:+393665667905" target="_blank">
-                                +39 366 566 7905
-                            </a>
-                                
-                            <a class="dati" href="https://mail.google.com/mail/?view=cm&amp;to=franco.simone.im@gmail.com&amp;su=Richiesta&amp;body=Ciao, vorrei informazioni" target="_blank">
-                                franco.simone.im@gmail.com
-                            </a>
-                                
-                            <a class="dati" href="https://www.google.com/maps/search/?api=1&amp;query=Spotorno" target="_blank">
-                                17028, Spotorno SV
-                            </a>
-                        </span>        
+                            <a class="dati" href="tel:+393665667905" target="_blank">+39 366 566 7905</a>
+                            <a class="dati" href="https://mail.google.com/mail/?view=cm&amp;to=franco.simone.im@gmail.com&amp;su=Richiesta&amp;body=Ciao, vorrei informazioni" target="_blank">franco.simone.im@gmail.com</a>
+                            <a class="dati" href="https://www.google.com/maps/search/?api=1&amp;query=Spotorno" target="_blank">17028, Spotorno SV</a>
+                        </span>
                     </div>
                 </div>
             </div>
